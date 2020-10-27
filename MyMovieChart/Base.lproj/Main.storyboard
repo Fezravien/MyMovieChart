@@ -36,7 +36,7 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ListCell" rowHeight="150" translatesAutoresizingMaskIntoConstraints="NO" id="hP5-II-ZxV" customClass="MovieCell" customModule="MyMovieChart" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ListCell" rowHeight="150" translatesAutoresizingMaskIntoConstraints="NO" id="hP5-II-ZxV" customClass="MovieCell" customModule="MyMovieChart" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="150"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hP5-II-ZxV" id="rgA-wv-iJ7">
@@ -109,27 +109,40 @@
                     <view key="view" contentMode="scaleToFill" id="Itt-wi-Tyf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <userGuides>
+                            <userLayoutGuide location="456" affinity="minY"/>
+                            <userLayoutGuide location="458" affinity="minY"/>
+                            <userLayoutGuide location="458" affinity="minY"/>
+                            <userLayoutGuide location="458" affinity="minY"/>
+                        </userGuides>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vUq-2O-PsO">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="gwc-xR-0NI">
+                                <rect key="frame" x="188.5" y="432" width="37" height="37"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JMW-Gv-RyV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="JMW-Gv-RyV" firstAttribute="top" secondItem="vUq-2O-PsO" secondAttribute="top" id="SIp-g0-rcg"/>
-                            <constraint firstItem="vUq-2O-PsO" firstAttribute="bottom" secondItem="JMW-Gv-RyV" secondAttribute="bottom" id="VDq-kB-b0c"/>
-                            <constraint firstItem="vUq-2O-PsO" firstAttribute="leading" secondItem="JMW-Gv-RyV" secondAttribute="leading" id="m40-aR-rh7"/>
-                            <constraint firstItem="JMW-Gv-RyV" firstAttribute="trailing" secondItem="vUq-2O-PsO" secondAttribute="trailing" id="oTx-Lr-tFP"/>
+                            <constraint firstItem="gwc-xR-0NI" firstAttribute="centerX" secondItem="vUq-2O-PsO" secondAttribute="centerX" id="6j7-Am-XX4"/>
+                            <constraint firstItem="vUq-2O-PsO" firstAttribute="top" secondItem="JMW-Gv-RyV" secondAttribute="top" id="C9l-sc-R6X"/>
+                            <constraint firstItem="gwc-xR-0NI" firstAttribute="centerY" secondItem="vUq-2O-PsO" secondAttribute="centerY" id="IIT-6I-X8i"/>
+                            <constraint firstItem="JMW-Gv-RyV" firstAttribute="trailing" secondItem="vUq-2O-PsO" secondAttribute="trailing" id="NKA-ED-nad"/>
+                            <constraint firstItem="JMW-Gv-RyV" firstAttribute="bottom" secondItem="vUq-2O-PsO" secondAttribute="bottom" id="NVV-1O-kjx"/>
+                            <constraint firstItem="vUq-2O-PsO" firstAttribute="leading" secondItem="JMW-Gv-RyV" secondAttribute="leading" id="Zl5-W1-HMp"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="IsR-Ek-z8S"/>
                     <connections>
+                        <outlet property="spinner" destination="gwc-xR-0NI" id="Ssu-qK-Bqf"/>
                         <outlet property="wv" destination="vUq-2O-PsO" id="x8k-gf-N04"/>
                     </connections>
                 </viewController>
