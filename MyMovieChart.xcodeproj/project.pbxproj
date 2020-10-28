@@ -19,6 +19,10 @@
 		BAD8695925451416009351AE /* secret.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BAD8695625451416009351AE /* secret.jpg */; };
 		BAD8695A25451416009351AE /* darknight.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BAD8695725451416009351AE /* darknight.jpg */; };
 		BAD8696225481D86009351AE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD8696125481D86009351AE /* DetailViewController.swift */; };
+		BAD8696C2548F7AD009351AE /* Listbullets.png in Resources */ = {isa = PBXBuildFile; fileRef = BAD8696A2548F7AD009351AE /* Listbullets.png */; };
+		BAD8696D2548F7AD009351AE /* Trailer.png in Resources */ = {isa = PBXBuildFile; fileRef = BAD8696B2548F7AD009351AE /* Trailer.png */; };
+		BAD86971254920C2009351AE /* ThreaterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD86970254920C2009351AE /* ThreaterCell.swift */; };
+		BAD8697525492199009351AE /* ThreaterListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD8697425492199009351AE /* ThreaterListController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,10 @@
 		BAD8695625451416009351AE /* secret.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = secret.jpg; sourceTree = "<group>"; };
 		BAD8695725451416009351AE /* darknight.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = darknight.jpg; sourceTree = "<group>"; };
 		BAD8696125481D86009351AE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		BAD8696A2548F7AD009351AE /* Listbullets.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Listbullets.png; sourceTree = "<group>"; };
+		BAD8696B2548F7AD009351AE /* Trailer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Trailer.png; sourceTree = "<group>"; };
+		BAD86970254920C2009351AE /* ThreaterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreaterCell.swift; sourceTree = "<group>"; };
+		BAD8697425492199009351AE /* ThreaterListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreaterListController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,11 +79,13 @@
 				BAD86954254513E5009351AE /* Resources */,
 				BAB618F025430EF90055FC62 /* AppDelegate.swift */,
 				BAB618F225430EF90055FC62 /* SceneDelegate.swift */,
-				BAB618F625430EF90055FC62 /* Main.storyboard */,
-				BAB619112543D4650055FC62 /* MovieCell.swift */,
 				BAB6190D25431C3A0055FC62 /* MovieVO.swift */,
 				BAB6190A254310EC0055FC62 /* ListViewController.swift */,
+				BAB619112543D4650055FC62 /* MovieCell.swift */,
+				BAD8697425492199009351AE /* ThreaterListController.swift */,
+				BAD86970254920C2009351AE /* ThreaterCell.swift */,
 				BAD8696125481D86009351AE /* DetailViewController.swift */,
+				BAB618F625430EF90055FC62 /* Main.storyboard */,
 				BAB618F925430EFB0055FC62 /* Assets.xcassets */,
 				BAB618FB25430EFB0055FC62 /* LaunchScreen.storyboard */,
 				BAB618FE25430EFB0055FC62 /* Info.plist */,
@@ -86,6 +96,8 @@
 		BAD86954254513E5009351AE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BAD8696A2548F7AD009351AE /* Listbullets.png */,
+				BAD8696B2548F7AD009351AE /* Trailer.png */,
 				BAD8695725451416009351AE /* darknight.jpg */,
 				BAD8695525451416009351AE /* rain.jpg */,
 				BAD8695625451416009351AE /* secret.jpg */,
@@ -150,6 +162,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAD8696C2548F7AD009351AE /* Listbullets.png in Resources */,
+				BAD8696D2548F7AD009351AE /* Trailer.png in Resources */,
 				BAD8695A25451416009351AE /* darknight.jpg in Resources */,
 				BAB618FD25430EFB0055FC62 /* LaunchScreen.storyboard in Resources */,
 				BAD8695825451416009351AE /* rain.jpg in Resources */,
@@ -171,6 +185,8 @@
 				BAB618F325430EF90055FC62 /* SceneDelegate.swift in Sources */,
 				BAD8696225481D86009351AE /* DetailViewController.swift in Sources */,
 				BAB619122543D4650055FC62 /* MovieCell.swift in Sources */,
+				BAD86971254920C2009351AE /* ThreaterCell.swift in Sources */,
+				BAD8697525492199009351AE /* ThreaterListController.swift in Sources */,
 				BAB6190B254310EC0055FC62 /* ListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
