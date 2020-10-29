@@ -224,6 +224,7 @@
                                     <outlet property="addr" destination="ldp-nV-FH5" id="oJ4-Ir-EB0"/>
                                     <outlet property="name" destination="tUd-QP-BTP" id="mxy-WK-6oQ"/>
                                     <outlet property="tel" destination="Zdc-dw-gMx" id="dRO-VJ-Jzj"/>
+                                    <segue destination="7Mg-1p-Zoq" kind="show" identifier="segue_map" id="rge-Kd-gKI"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -237,6 +238,31 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6s1-MI-Ttt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1128.985507246377" y="686.38392857142856"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="ul6-OA-161">
+            <objects>
+                <viewController id="7Mg-1p-Zoq" customClass="ThreaterViewController" customModule="MyMovieChart" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yjh-XC-2iB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="2eE-XS-OLL">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7hI-gM-aSV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="K5e-Vh-bLh"/>
+                    <connections>
+                        <outlet property="map" destination="2eE-XS-OLL" id="CVp-fl-fUh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tch-ed-oxh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2082.608695652174" y="685.71428571428567"/>
         </scene>
         <!--영화관-->
         <scene sceneID="nSQ-0l-T3d">
